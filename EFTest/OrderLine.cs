@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EFTest {
-    internal class OrderLine {
+    public class OrderLine { // needs to be public
         public int Id { get; set; }
         public string Product { get; set; }
         public string Description { get; set; }

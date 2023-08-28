@@ -22,7 +22,7 @@ namespace EFTest {
                                  ol.Price,
                                  LineTotal = ol.Quantity * ol.Price
                              };
-            custOrders.ToList().ForEach(c => Console.WriteLine($"{c.OrderDate} | {c.Description} | {c.Customer} | {ol.Product} | "));
+            custOrders.ToList().ForEach(c => Console.WriteLine($"{c.OrderDate} | {c.Description} | {c.Customer} | {c.Product} | {c.Quantity}"));
 
 
 

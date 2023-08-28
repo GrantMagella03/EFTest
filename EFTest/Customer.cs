@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EFTest {
-    public class Customer {
+    public class Customer { // needs to be public
         public int ID { get; set; }
         public string Name { get; set; }
         public string City { get; set; }

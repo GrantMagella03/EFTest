@@ -13,8 +13,8 @@ namespace EFTest {
         public DbSet<OrderLine> OrderLines { get; set; }
         public AppDbContext() {
 
-        }
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        } // only needed for console app
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { } // needed for any entity framework
         protected override void OnConfiguring(DbContextOptionsBuilder Obldr) {
             var connStr = "server=localhost\\sqlexpress;" +
                           "database=SalesDb;" +
